@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.kafka-curso</groupId>
+	<artifactId>kafka</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>ecommerce</name>
+	<packaging>pom</packaging>
+	<url>br.com.cursokafka.ecommerce</url>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka-clients</artifactId>
+			<version>3.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>2.0.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.10.1</version>
+		</dependency>
+
+	</dependencies>
+	<modules>
+		<module>email-service</module>
+		<module>service-fraud-detector</module>
+		<module>service-log</module>
+		<module>service-new-order</module>
+		<module>common-kafka</module>
+		<module>service-users</module>
+		<module>service-http-ecommerce</module>
+		<module>service-reading-report</module>
+		<module>service-reading-report-2</module>
+		<module>service-email-new-order</module>
+		<module>common-database</module>
+	</modules>
+</project>
